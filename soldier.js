@@ -12,16 +12,16 @@ const soldier = {
   },
   reload: function () {
     soldier.weapon.rounds = 30;
-    --soldier.ammo;
+    --this.ammo;
     console.log("перезарядка...");
-    if (soldier.ammo == 0) {
+    if (this.ammo == 0) {
       console.log("не осталось припасов");
     }
   },
   wound: function () {
-    --soldier.health;
-    if (soldier.health == 0) {
-      console.log("Ты проиграл! " + "Здоровье: " + soldier.health);
+    --this.health;
+    if (this.health == 0) {
+      console.log("Ты проиграл! " + "Здоровье: " + this.health);
     }
   },
 };
