@@ -3,7 +3,7 @@ const soldier = {
   health: 10,
   weapon: {
     name: "AK47",
-    rounds: 2,
+    rounds: 30,
   },
   ammo: 3,
   shoot: function () {
