@@ -3,12 +3,16 @@ const soldier = {
   health: 10,
   weapon: {
     name: "AK47",
-    rounds: 30,
+    rounds: 2,
   },
   ammo: 3,
   shoot: function () {
     --soldier.weapon.rounds;
-    console.log("бах-бах");
+    if (soldier.weapon.rounds <= 0) {
+      console.log("Обойма пуста. Перезаредитесь!");
+    } else {
+      console.log("бах-бах");
+    }
   },
   reload: function () {
     soldier.weapon.rounds = 30;
